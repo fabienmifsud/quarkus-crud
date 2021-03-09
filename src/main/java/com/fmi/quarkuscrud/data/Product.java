@@ -6,9 +6,9 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Entity
+@Entity
 @Data
-//@Table(name = "product")
+@Table(name = "product")
 public class Product {
 
     @Id

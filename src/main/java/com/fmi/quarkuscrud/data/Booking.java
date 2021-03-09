@@ -5,9 +5,9 @@ import lombok.Data;
 import javax.persistence.*;
 import java.util.Date;
 
-//@Entity
+@Entity
 @Data
-//@Table(name = "booking")
+@Table(name = "booking")
 public class Booking {
 
     @Id

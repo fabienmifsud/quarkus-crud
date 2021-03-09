@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-//@Entity
+@Entity
 @Data
-//@Table(name = "client")
+@Table(name = "client")
 public class Client {
 
     @Id
