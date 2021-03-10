@@ -77,3 +77,4 @@ mutation createBooking {
 
 Same app with other stacks : 
 - https://github.com/fabienmifsud/spring-boot-crud
+- https://github.com/fabienmifsud/micronaut-crud
