@@ -1,4 +1,4 @@
-package com.fmi.quarkuscrud.service;
+package com.fmi.quarkuscrud.repository;
 
 
 import com.fmi.quarkuscrud.data.Client;
@@ -10,7 +10,7 @@ import javax.transaction.Transactional;
 import java.text.ParseException;
 
 @ApplicationScoped
-public class ClientRepository implements PanacheRepository<Client>  {
+public class ClientRepository implements PanacheRepository<Client> {
 
 
     @Transactional
@@ -18,7 +18,7 @@ public class ClientRepository implements PanacheRepository<Client>  {
         Client client = new Client();
         client.setEmail(email);
         client.setName(name);
-        if(dateOfBirth != null) {
+        if (dateOfBirth != null) {
             client.setDateOfBirth(DateUtils.parseDate(dateOfBirth, "yyyy-MM-dd HH:mm:ss.SSS"));
         }
 

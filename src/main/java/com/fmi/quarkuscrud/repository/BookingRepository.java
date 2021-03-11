@@ -1,4 +1,4 @@
-package com.fmi.quarkuscrud.service;
+package com.fmi.quarkuscrud.repository;
 
 
 import com.fmi.quarkuscrud.data.Booking;

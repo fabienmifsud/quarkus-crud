@@ -2,7 +2,7 @@ package com.fmi.quarkuscrud.resource;
 
 
 import com.fmi.quarkuscrud.data.Client;
-import com.fmi.quarkuscrud.service.ClientRepository;
+import com.fmi.quarkuscrud.repository.ClientRepository;
 import org.eclipse.microprofile.graphql.Description;
 import org.eclipse.microprofile.graphql.GraphQLApi;
 import org.eclipse.microprofile.graphql.Mutation;
@@ -21,7 +21,7 @@ public class ClientResource {
 
     @Query("clients")
     @Description("Get all Clients")
-    @RolesAllowed({"USER","ADMIN"})
+    @RolesAllowed({"USER", "ADMIN"})
     public List<Client> findAll() {
         return this.clientRepository.findAll().list();
     }

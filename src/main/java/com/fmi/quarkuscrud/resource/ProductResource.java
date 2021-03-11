@@ -2,7 +2,7 @@ package com.fmi.quarkuscrud.resource;
 
 
 import com.fmi.quarkuscrud.data.Product;
-import com.fmi.quarkuscrud.service.ProductRepository;
+import com.fmi.quarkuscrud.repository.ProductRepository;
 import org.eclipse.microprofile.graphql.Description;
 import org.eclipse.microprofile.graphql.GraphQLApi;
 import org.eclipse.microprofile.graphql.Mutation;
@@ -20,7 +20,7 @@ public class ProductResource {
 
     @Query("products")
     @Description("Get all Products")
-    @RolesAllowed({"USER","ADMIN"})
+    @RolesAllowed({"USER", "ADMIN"})
     public List<Product> findAll() {
         return this.productRepository.findAll().list();
     }

@@ -1,4 +1,4 @@
-package com.fmi.quarkuscrud.service;
+package com.fmi.quarkuscrud.repository;
 
 import com.fmi.quarkuscrud.data.Booking;
 import com.fmi.quarkuscrud.data.Client;
@@ -11,8 +11,6 @@ import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
 import java.text.ParseException;
-import java.util.Date;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 @QuarkusTest
